@@ -1,0 +1,6 @@
+# Local Azure Storage Development with Azurite, Azure SDKs, and Azure Storage Explorer
+
+[Azurite](https://github.com/azure/azurite), the local cross-platform Azure Storage emulator, just released support for HTTPS and OAuth, making our local Azure Storage development story complete.  You can now do all of your Azure Storage development on your local machine, saving you time and money during all of your tight inner-loop cycles. Prior to the Azurite v3.7.0 release, you could not use any Bearer Token based authentication mechanism like what is provided with Azure Identity's [DefaultAzureCredential](https://docs.microsoft.com/en-us/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet), because it requires both HTTPS and OAuth.  Now that Azurite supports both, we can new up a Storage client the same way regardless of whether we're pointing to Azurite or Azure.
+
+
+This repo is supplemental code for this blog post: https://blog.jongallant.com/local-azure-storage-development-with-azurite-azuresdks-storage-explorer. Please visit that post for step-by-step instructions for getting everything setup.
